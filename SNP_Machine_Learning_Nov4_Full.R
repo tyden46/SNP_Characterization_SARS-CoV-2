@@ -8,7 +8,6 @@ library(stringr)
 library(pls)
 library(doParallel)
 library(vroom)
-setwd("C:\\Users\\tyson\\OneDrive\\Desktop\\Coronavirus Proteins\\November4MachineLearning")
 table=vroom("2000vcf.tsv")
 snps=as.data.frame(t(table))
 colnames(snps)=snps[2,]
